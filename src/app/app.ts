@@ -8,6 +8,11 @@ import { Header } from './header/header';
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
+
 export class App {
   title = 'frontend';
+  name ="harsh"
+  greet(): string {
+    return(`hello ${this.name}`)
+  }
 }
