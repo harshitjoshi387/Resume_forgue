@@ -1,18 +1,9 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Header } from './header/header';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header],
-  templateUrl: './app.html',
-  styleUrl: './app.scss'
+  imports: [RouterOutlet],
+  template: '<router-outlet />',
 })
-
-export class App {
-  title = 'frontend';
-  name ="harsh"
-  greet(): string {
-    return(`hello ${this.name}`)
-  }
-}
+export class App {}
